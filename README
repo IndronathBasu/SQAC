@@ -10,7 +10,6 @@ mini_translator/
 ├── model.py       # Contains translation logic using MarianMT models
 ├── index.py       # User interface to select translation direction and input text
 └── README.md      # Project documentation
-```
 
 
 ## 🛠️ Features
@@ -25,25 +24,24 @@ mini_translator/
 
 1. **Clone the repository**
 
-```bash
+bash
 git clone https://github.com/IndronathBasu/SQAC.git
 cd mini_translator
-```
+
 
 2. **Create a virtual environment (recommended)**
 
-```bash
+bash
 python -m venv translator_env
 translator_env\Scripts\activate       # Windows
 # or
 source translator_env/bin/activate    # Linux/Mac
-```
 
 3. **Install dependencies**
 
-```bash
+bash
 pip install torch transformers
-```
+
 
 > Note: Ensure you have Python **3.8–3.12** for compatibility with PyTorch.
 
@@ -52,13 +50,11 @@ pip install torch transformers
 
 Run the CLI program:
 
-```bash
+bash
 python index.py
-```
 
 **Example Run:**
 
-```
 🌐 Mini Language Translator
 Choose translation direction:
 1. English → Hindi
@@ -71,9 +67,7 @@ Enter English text: How are you?
 
 ✅ Translation Result:
 आप कैसे हैं?
-```
 
----
 
 ## 🧠 How It Works
 
@@ -86,7 +80,6 @@ Enter English text: How are you?
 
 3. **index.py** allows the user to choose the translation direction and input text.
 
----
 
 ## 📦 Dependencies
 
@@ -96,11 +89,9 @@ Enter English text: How are you?
 
 Install with:
 
-```bash
+bash
 pip install torch transformers
-```
 
----
 
 ## ⚡ Future Improvements
 
@@ -109,10 +100,10 @@ pip install torch transformers
 * Handle **longer sentences and paragraphs** efficiently
 * Add **language auto-detection** for automatic direction selection
 
----
 
 ## 📄 License
 
 This project is made by Indronath Basu
+
 
 
