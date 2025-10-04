@@ -29,7 +29,7 @@ git clone https://github.com/IndronathBasu/SQAC.git
 cd mini_translator
 
 
-2. **Create a virtual environment (recommended)**
+2. Create a virtual environment (recommended)
 
 bash
 python -m venv translator_env
@@ -37,7 +37,7 @@ translator_env\Scripts\activate       # Windows
 # or
 source translator_env/bin/activate    # Linux/Mac
 
-3. **Install dependencies**
+3. Install dependencies
 
 bash
 pip install torch transformers
@@ -104,6 +104,7 @@ pip install torch transformers
 ## 📄 License
 
 This project is made by Indronath Basu
+
 
 
 
