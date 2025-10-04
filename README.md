@@ -29,7 +29,7 @@ mini_translator/
 
 1. **Clone the repository**  
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/IndronathBasu/SQAC.git
 cd mini_translator
 ```
 
@@ -112,5 +112,5 @@ pip install torch transformers
 
 ## 📄 License
 
-This project is for **educational purposes**.
+This project is made by Indronath Basu
 
