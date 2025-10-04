@@ -1,0 +1,116 @@
+# 🌐 Mini Language Translator
+
+A simple command-line **English ↔ Hindi translator** built using Python and Hugging Face MarianMT models. Users can input text in English or Hindi and get the translation instantly.
+
+---
+
+## 📁 Project Structure
+
+```
+mini_translator/
+│
+├── model.py       # Contains translation logic using MarianMT models
+├── index.py       # User interface to select translation direction and input text
+└── README.md      # Project documentation
+```
+
+---
+
+## 🛠️ Features
+
+- Translate **English → Hindi**  
+- Translate **Hindi → English**  
+- Command-line interface (CLI) for easy interaction  
+- Uses **Hugging Face MarianMT pretrained models** for accurate translations
+
+---
+
+## ⚡ Installation
+
+1. **Clone the repository**  
+```bash
+git clone <your-repo-url>
+cd mini_translator
+```
+
+2. **Create a virtual environment (recommended)**  
+```bash
+python -m venv translator_env
+translator_env\Scripts\activate       # Windows
+# or
+source translator_env/bin/activate    # Linux/Mac
+```
+
+3. **Install dependencies**  
+```bash
+pip install torch transformers
+```
+
+> Note: Ensure you have Python **3.8–3.12** for compatibility with PyTorch.
+
+---
+
+## 🏃 Running the Translator
+
+Run the CLI program:  
+```bash
+python index.py
+```
+
+**Example Run:**
+
+```
+🌐 Mini Language Translator
+Choose translation direction:
+1. English → Hindi
+2. Hindi → English
+Enter your choice (1/2): 1
+
+Enter English text: How are you?
+
+🔄 Translating...
+
+✅ Translation Result:
+आप कैसे हैं?
+```
+
+---
+
+## 🧠 How It Works
+
+1. **model.py** loads two Hugging Face MarianMT models:  
+   - `Helsinki-NLP/opus-mt-en-hi` → English to Hindi  
+   - `Helsinki-NLP/opus-mt-hi-en` → Hindi to English
+
+2. The `translate()` function handles tokenization, model inference, and decoding.
+
+3. **index.py** allows the user to choose the translation direction and input text.
+
+---
+
+## 📦 Dependencies
+
+- Python 3.8–3.12  
+- torch  
+- transformers  
+
+Install with:  
+```bash
+pip install torch transformers
+```
+
+---
+
+## ⚡ Future Improvements
+
+- Add **GUI interface** using Streamlit or Tkinter  
+- Support additional regional languages (Tamil, Telugu, Marathi, etc.)  
+- Handle **longer sentences and paragraphs** efficiently  
+- Add **language auto-detection** for automatic direction selection
+
+---
+
+## 📄 License
+
+This project is for **educational purposes**.
+
