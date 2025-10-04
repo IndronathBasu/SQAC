@@ -11,10 +11,7 @@ tokenizer_hi_en = MarianTokenizer.from_pretrained(hi_to_en_model_name)
 model_hi_en = MarianMTModel.from_pretrained(hi_to_en_model_name)
 
 def translate(text, direction):
-    """sssssssssssssss
-    Translates text based on the selected direction.
-    direction: 'en-hi' or 'hi-en'
-    """
+
     if direction == "en-hi":
         tokenizer, model = tokenizer_en_hi, model_en_hi
     elif direction == "hi-en":
@@ -28,3 +25,4 @@ def translate(text, direction):
     translated_text = tokenizer.decode(outputs[0], skip_special_tokens=True)
 
     return translated_text
+
